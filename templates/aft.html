@@ -1,0 +1,69 @@
+<html>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" 
+integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" 
+crossorigin="anonymous">
+</head>
+<style>
+    body
+    {
+        background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(250, 148, 173));
+    }
+    .h1{
+color: #FFFFFF;
+background-color:#e2414e ;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 50%;
+padding-top: 5px;
+border-radius: 6px;
+text-shadow: 2px 2px crimson;
+}
+.h3{
+color: #FFFFFF;
+background-color: #96d8e9;
+margin-left: auto;
+margin-right: auto;
+text-shadow: 2px 2px rgb(211, 64, 6);
+text-align: center;
+width: 50%;
+font-family: Verdana;
+padding: 5px;
+border-radius: 6px;}
+img
+{
+    width: 50%;
+    height: fit-content;
+}
+</style>
+<body >
+
+    <center>
+
+        <p class="h1">PREDICTION</p>
+        {%if data==0 %}
+        <p class="h3">The flower is Iris-Setosa</p>
+        <img src="static\setosa.jpg">
+        {%elif data==1%}
+        <p class="h3">The flower is Iris-Versicolor</p>
+        <img src="static\verci.jpg">
+        {%else%} 
+        <p class="h3">The flower is Iris-Virginica</p>
+        <img src="static\virgi.jpg">
+        {%endif%}
+        <br><br>
+        <a href="/" >
+            <button type="button" class="btn btn-info">Go back to home page</button>
+        </a>
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+
